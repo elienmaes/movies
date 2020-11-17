@@ -1,0 +1,41 @@
+$font-family-source-sans-pro: 'Source Sans Pro', sans-serif;
+
+/* 
+ * Customize Bootstrap
+*/
+$own_purple:#9324B5;
+$own_purple_hover: #400d50;
+
+.own_purple {
+color: $own_purple;
+}
+.own_purple_hover{
+    color:$own_purple_hover;
+}
+.btn-purple, .badge-purple {
+    color: #fff !important;
+background-color: $own_purple !important;
+border-color: $own_purple !important;
+}
+
+.btn-outline-purple{
+    color: $own_purple !important;
+    background-color:#fff !important;
+    border-color:$own_purple !important;
+}
+.border-purple{
+    border-color: rgba(147, 36, 181, 0.1) !important;    
+}
+ 
+// Body
+$body-bg: #fff;
+$body-color: #111;
+
+// Typography
+$font-family-base: $font-family-source-sans-pro;
+
+
+// Grid
+$grid-columns: 12;
+$grid-gutter-width: 64px;
+

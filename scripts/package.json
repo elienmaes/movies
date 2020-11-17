@@ -1,0 +1,28 @@
+{
+    "name": "scripts",
+    "version": "1.0.0",
+    "main": "index.js",
+    "license": "MIT",
+    "homepage": "",
+    "dependencies": {
+        "dotenv": "^8.2.0",
+        "faker": "^4.1.0",
+        "firebase": "^7.17.1",
+        "firebase-admin": "^8.12.1",
+        "node-fetch": "^2.6.0",
+        "uuid": "^8.0.0"
+    },
+    "devDependencies": {
+        "@babel/core": "^7.9.6",
+        "@babel/node": "^7.10.5",
+        "@babel/runtime": "^7.9.6",
+        "babel-preset-airbnb": "^5.0.0"
+    },
+    "scripts": {
+        "test:firebase": "babel-node firebase.js --debug --presets airbnb",
+        "seeder:movies": "babel-node movies_seeder.js --debug --presets airbnb",
+        "seeder:users": "babel-node users_seeder.js --debug --presets airbnb",
+        "delete:movies": "babel-node collection_delete.js movies 50 --debug --presets airbnb",
+        "delete:users": "babel-node users_delete.js --debug --presets airbnb"
+    }
+}

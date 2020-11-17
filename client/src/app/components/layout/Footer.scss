@@ -1,0 +1,24 @@
+@import '../../_sass/1-abstracts/variables';
+@import '../../_sass/2-vendor/bootstrap';
+
+.app-footer {
+  background: $own_purple;
+  .nav {
+    padding: $grid-gutter-width 0;
+  }
+    .nav-item{
+        .nav-link{
+            color:#fff;
+        
+        }
+        .nav-link:hover{
+            color:$own_purple_hover;
+        }
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .fa-2x {
+        font-size: 1.5em;
+    }
+}

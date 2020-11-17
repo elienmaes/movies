@@ -1,0 +1,47 @@
+@import '../_sass/1-abstracts/index';
+@import '../_sass/2-vendor/index';
+
+.page--home {
+    margin: $grid-gutter-width 0;
+  & .featured {
+    position: relative;
+    background-color: rgba(147, 36, 181, 0.7);
+
+    padding-top: $grid-gutter-width;
+    padding-bottom: $grid-gutter-width;
+
+    color: $gray-100;
+
+    &:before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0px;
+      left: 0px;
+      z-index: 0;
+      
+    }
+    .carousel-item{
+        img{
+            object-fit: cover;
+            position: relative;
+            opacity: 0.5;
+        }
+       .carousel-caption{
+           background-color: $own_purple;
+           bottom:5px;
+       }
+    }
+    .fa-angle-left, .fa-angle-right{
+        color:$own_purple;  
+    }
+  }
+}
+
+
+@media only screen and (max-width: 600px){
+    .page--home{
+        margin-top:8rem;
+    }
+}

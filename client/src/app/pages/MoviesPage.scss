@@ -1,0 +1,32 @@
+@import '../_sass/1-abstracts/index';
+
+
+.page--movie{
+overflow-x: hidden;
+
+.to-top__button{
+    position: fixed;
+    top:600px;
+    left:180px;
+}
+}
+
+@media only screen and (max-width: 600px){
+    
+    .page--movie{
+        margin-top: 8rem;
+        ul{
+            text-align: center;
+        }
+
+        .to-top__button{
+            top: 600px;
+            left: 5px;
+            z-index:9999;
+            
+            .fa-3x {
+                font-size: 2em;
+            }
+        }
+    }
+}

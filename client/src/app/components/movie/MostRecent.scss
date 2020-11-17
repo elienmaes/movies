@@ -1,0 +1,13 @@
+@import '../../_sass/1-abstracts/index';
+
+.most-recent{
+    .movie__picture{
+        img{
+            width:100%;
+        }
+    }
+    .card-title{
+        color:$own_purple;
+    }
+
+}

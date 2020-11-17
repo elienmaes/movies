@@ -1,0 +1,24 @@
+@import '../_sass/1-abstracts/index';
+
+.page--cart{
+    a:hover{
+color:$own_purple_hover;
+text-decoration: none;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .page--cart{
+        margin-top:8rem;
+    
+    .mobile{
+        flex-direction:row-reverse;
+        margin-bottom:1rem;
+    }
+        .total{
+            .whitespace{
+                display:none;
+            }
+        }
+    }
+}
